@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    srand(time(NULL));
+    int total = 0;
+    int tmp;
+    printf("Rolling dice...\n");
+    for (int i = 1; i <= 2; i++) {
+        tmp = rand() % 6 + 1;
+        printf("Dice %d: %d\n", i, tmp);
+        total += tmp;
+    }
+    printf("Total value: %d\n", total);
+    
+    return 0;
+}
