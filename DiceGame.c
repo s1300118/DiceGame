@@ -4,7 +4,7 @@
 
 int main() {
     char name[50];
-    printf("What is your name?");
+    printf("What is your name?\n");
     scanf("%s",&name);
     printf("Hello, %s\n",name);
     srand(time(NULL));
@@ -17,8 +17,8 @@ int main() {
         total += tmp;
     }
     printf("Total value: %d\n", total);
-    if(total>7)printf("You won\n");
-    else printf("You lost\n");
+    if(total>7)printf("%s won!\n",name);
+    else printf("%s lost!\n",name);
     
     return 0;
 }
